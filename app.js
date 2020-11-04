@@ -3,42 +3,26 @@ const chalk = require('chalk')
 const yargs = require('yargs')
  
 // Comando add
-yargs.command({
-    command:'add',
-    discribe: 'adiciona uma nova nota.',
-    handler: function(){
+yargs.command('add','adiciona uma nova nota.', function(){
         console.log('Adding notes...')
-    }
-})
+    })
 
 // Comando remove
-yargs.command({
-    command:'remove',
-    discribe: 'Remover uma nova nota.',
-    handler: function(){
+yargs.command('remove','Remover uma nova nota.', function(){
         console.log('Removing notes...')
-    }
-})
+    })
 
 // Comando list
-yargs.command({
-    command:'list',
-    discribe: 'Listar as notas.',
-    handler: function(){
+yargs.command('list','Listar as notas.',function(){
         console.log('Listing notes...')
-    }
-})
+    })
 
 // Comando read
-yargs.command({
-    command:'read',
-    discribe: 'Ler uma nota.',
-    handler: function(){
+yargs.command('read','Ler uma nota.',function(){
         console.log('Reading notes...')
-    }
-})
-yargs.argv
+    })
 
+yargs.argv
 
 
 
